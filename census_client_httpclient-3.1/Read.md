@@ -14,4 +14,5 @@ These are the following important things:
 # Technology:
  - HttpClient i.e commons-httpclient-3.1.jar
  	http://hc.apache.org/httpclient-3.x/
- - Also add commons-logging-1.2.jar else you'll get exception about logging class not found
+ - Added **commons-logging-1.2.jar** else you'll get exception about logging class not found
+ - Added **commons-codec-1.9.jar**

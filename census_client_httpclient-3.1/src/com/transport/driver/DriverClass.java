@@ -23,8 +23,13 @@ public class DriverClass {
 		// Transport layer or GET call
 		HttpClientHandlerV3 httpClientHandler = new HttpClientHandlerImpl();
 		httpClientHandler.initialize();
-		
-		
+		// Get request call with zipcode 00602 which is hard code now in properties file. 
+		try {
+			String response = httpClientHandler.doGet(pro.getProperty("endpoint"));		// TODO: Make zipcode as input from properties
+			System.out.println(response);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}		
 	}
 	
 	/**
@@ -43,7 +48,7 @@ public class DriverClass {
     		prop.load(input);
 
     		// get the property value and print it out
-    		System.out.println(prop.getProperty("database"));
+    		System.out.println(prop.getProperty("say"));
     	} catch (IOException ex) {
     		ex.printStackTrace();
     	} finally {
