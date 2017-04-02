@@ -4,8 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import com.transport.util.HttpClientHandlerImpl;
-import com.transport.util.HttpClientHandlerV4;
+import com.transport.util.HttpClientV4;
 
 
 /**
@@ -21,15 +20,10 @@ public class DriverClass {
 		Properties pro = dc.readDataFromPropertiesFile("config.properties");
 		
 		// Transport layer or GET call
-		HttpClientHandlerV4 httpClientHandler = new HttpClientHandlerImpl();
-		httpClientHandler.initialize();
-		// Get request call with zipcode 00602 which is hard code now in properties file. 
-		try {
-			String response = httpClientHandler.doGet(pro.getProperty("endpoint"));		// TODO: Make zipcode as input from properties
-			System.out.println(response);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}		
+		HttpClientV4 httpClientHandler = new HttpClientV4();
+		
+		String response = httpClientHandler.doGet(pro.getProperty("endpoint"));		// TODO: Make zipcode as input from properties
+		System.out.println(response);		
 	}
 	
 	/**
