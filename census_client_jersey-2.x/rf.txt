@@ -1,0 +1,3 @@
+http://www.mkyong.com/webservices/jax-rs/restful-java-client-with-jersey-client/
+http://anosh-agiledeveloper.blogspot.in/2012/07/jersey-apachehttpclient-with-connection.html
+https://gist.github.com/theotherian/8312354
