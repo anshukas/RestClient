@@ -16,7 +16,7 @@ These are the following important things:
 <hr/>
 
 # Technology:
-1. Project Name: **census_client** <br/>
+1. Project Name: **census_client** i.e using httpClient 4.x <br/>
 HttpClient i.e httpcomponents-client-4.5.3 and link is http://hc.apache.org/downloads.cgi  <br/>
 
 2. Project Name: **census_client_httpclient-3.1** <br/>
