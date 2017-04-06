@@ -21,7 +21,6 @@ public class DriverClass {
 		Properties pro = dc.readDataFromPropertiesFile("config.properties");
 		
 		// Transport layer or GET call.
-		
 		HttpClientHandlerV3 httpClientHandler = new HttpClientHandlerImpl();
 		httpClientHandler.initialize();
 		// Get request call with zipcode 00602 which is hard code now in properties file. 
