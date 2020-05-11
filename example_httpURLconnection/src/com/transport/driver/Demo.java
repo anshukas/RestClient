@@ -22,7 +22,7 @@ public class Demo {
 				"}";
 		
 		final Map<String, String> httpHeaders = new LinkedHashMap<String, String>();
-		httpHeaders.put("Content-Type", "application/xml");
+		httpHeaders.put("Content-Type", "application/json");
 		httpHeaders.put("x-api-key", "DEMO-API-KEY");
 		
 		HttpURLConnectionClient client = new HttpURLConnectionClient();
